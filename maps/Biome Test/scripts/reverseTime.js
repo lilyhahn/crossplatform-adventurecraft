@@ -1,0 +1,1 @@
+time.setRate(time.getRate()-10)

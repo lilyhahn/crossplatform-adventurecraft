@@ -1,0 +1,6 @@
+health=20
+height=3.6
+width=1.2
+onCreated=testOnCreated.js
+onAttacked=testOnAttacked.js
+onUpdate=testOnUpdate.js
