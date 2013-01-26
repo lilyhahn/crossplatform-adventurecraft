@@ -1,9 +1,7 @@
-chdir %HOMEPATH%
-cd Dropbox\AdventureCraft\
-cd .minecraft\bin\
+cd %~dp0\.minecraft\bin\
 del natives /S
 xcopy natives_win natives
-cd %HOMEPATH%\Dropbox\AdventureCraft\swt\
+cd %~dp0\swt\
 copy swt_win64.jar %HOMEPATH%\Dropbox\AdventureCraft\swt.jar
-cd %HOMEPATH%\Dropbox\AdventureCraft\
+cd %~dp0\
 AdventureCraft

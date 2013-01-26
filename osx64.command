@@ -1,15 +1,15 @@
 #!/bin/sh
 
-cd ~/Dropbox/AdventureCraft/.minecraft/bin/natives_osx;
+cd ~/crossplatform-adventurecraft/.minecraft/bin/natives_osx;
 files=(*);
 filelen=${#files[@]};
-rm -rf ~/Dropbox/AdventureCraft/.minecraft/bin/natives/;
-mkdir ~/Dropbox/AdventureCraft/.minecraft/bin/natives/;
+rm -rf ~/crossplatform-adventurecraft/.minecraft/bin/natives/;
+mkdir ~/crossplatform-adventurecraft/.minecraft/bin/natives/;
 for(( i=0; i<${filelen}; i++ ))
 do
-	cp ${files[i]} ~/Dropbox/AdventureCraft/.minecraft/bin/natives/${files[i]};
+	cp ${files[i]} ~/crossplatform-adventurecraft/.minecraft/bin/natives/${files[i]};
 done
-cd ~/Dropbox/AdventureCraft/swt;
-cp swt_osx.jar ~/Dropbox/AdventureCraft/swt.jar;
-cd ~/Dropbox/AdventureCraft/;
+cd ~/crossplatform-adventurecraft/swt;
+cp swt_osx.jar ~/crossplatform-adventurecraft/swt.jar;
+cd ~/crossplatform-adventurecraft/;
 java -jar AdventureCraft.jar;
