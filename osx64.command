@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-cd ~/crossplatform-adventurecraft/.minecraft/bin/natives_osx;
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+cd $DIR/.minecraft/bin/natives_osx;
 files=(*);
 filelen=${#files[@]};
 rm -rf ~/crossplatform-adventurecraft/.minecraft/bin/natives/;
