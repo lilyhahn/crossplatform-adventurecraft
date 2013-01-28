@@ -1,15 +1,16 @@
 #!/bin/bash
 
-cd ~/crossplatform-adventurecraft/.minecraft/bin/natives_ubuntu;
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+cd $DIR/.minecraft/bin/natives_ubuntu;
 files=(*);
 filelen=${#files[@]};
-rm -rf ~/crossplatform-adventurecraft/.minecraft/bin/natives/;
-mkdir~/crossplatform-adventurecraft/.minecraft/bin/natives/;
+rm -rf $DIR/.minecraft/bin/natives/;
+mkdir $DIR/.minecraft/bin/natives/;
 for(( i=0; i<${filelen}; i++ ))
 do
-	cp ${files[i]} ~/crossplatform-adventurecraft/.minecraft/bin/natives/${files[i]};
+	cp ${files[i]} $DIR/.minecraft/bin/natives/${files[i]};
 done
-cd ~/crossplatform-adventurecraft/swt;
-cp swt_linux32.jar ~/crossplatform-adventurecraft/swt.jar;
-cd ~/crossplatform-adventurecraft/;
+cd $DIR/swt;
+cp swt_linux32.jar $DIR/swt.jar;
+cd $DIR/;
 java -jar AdventureCraft.jar;
