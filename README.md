@@ -12,8 +12,9 @@ operating systems have a 32 after the OS name.
 Adventurecraft has not been updated recently, so the installer expects Minecraft version 1.3 or lower. To fix this,
 you can download the minecraft.jar for Minecraft 1.3. Put it in the bin directory of your Minecraft install directory.  
 It will be:  
-*%APPDATA%/.minecraft/ on Windows
-*~/Library/Application Support on OSX
-*~/.minecraft on Linux
+* %APPDATA%/.minecraft/ on Windows
+* ~/Library/Application Support on OSX
+* ~/.minecraft on Linux  
+
 After you do this, start Minecraft to let it update to the new jarfile, then close Minecraft. Use the launcher script
 that corresponds to your OS, then tell Adventurecraft to install from your minecraft install directory.  
