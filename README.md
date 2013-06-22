@@ -18,3 +18,5 @@ It will be:
 
 After you do this, start Minecraft to let it update to the new jarfile, then close Minecraft. Use the launcher script
 that corresponds to your OS, then tell Adventurecraft to install from your minecraft install directory.  
+###Fun Fact
+These scripts actually shouldn't be necessary. The Adventurecraft launcher has a builtin function to download the correct version of swt, but it is broken. Why? It downloads it from a Dropbox mirror, which has been taken down because of all the traffic it recieved back when Adventurecraft was popular.

@@ -2,6 +2,16 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 echo $DIR;
+cd $DIR;
+if [ ! -d swt/ ]
+then
+	mkdir swt
+fi
+if [ ! -e swt/swt_linux.jar ]
+then
+	curl -L http://carroll.aset.psu.edu/pub/eclipse/eclipse/downloads/drops4/R-4.2.2-201302041200/swt-4.2.2-cocoa-macosx-x86_64.zip -o swt/swt_osx.zip
+	unzip -p swt/swt_osx.zip swt.jar > swt/swt_osx.jar
+fi
 cd $DIR/.minecraft/bin/natives_osx;
 files=(*);
 filelen=${#files[@]};
